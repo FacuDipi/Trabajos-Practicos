@@ -15,49 +15,58 @@ src: url(./fonts/Ubuntu-Light.ttf);
 
 }
 
-.link1{
-    display: inline-flex;
-    background-color: palevioletred;
-    border-top-left-radius: 80px 80px;
-border-style: solid;
-font-family: "Ubuntu-Light";
-font-size: 10px;
+body{
+    margin: 0;
+    padding: 0;
+}
 
-border-width: thin;
-    border-style: solid;
-    
-
-
+.titulo{
+display: inline-block;
+color: white;
+font-family:"Ubuntu-Bold" ;
+font-size: 40px;
 
 }
-.link2{
-    display: inline-flex;
-    background-color:lightseagreen;
-    border-width: thin;
-    border-style: solid;
-    font-size: 8px;
+header{
+background-image: url(./img/spacebkg.png);
+width: 100%;
+height: 15vh;
+background-size: cover;
+background-position: top;
+align-items: left;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    background-color: rgb(236, 236, 223);
+    height: 50px;
+  
+}
+
+}
+.list-nav{
+    list-style: none;
+}
+
+.item-nav{
+    display: inline-block;
+    margin: 0px 20px;
     font-family: "Ubuntu-Light";
-    font-size: 10px;
-
-
-}
-.link3{
-    display: inline-flex;
-background-color: red;
-font-family: "Ubuntu-Light";
-border-top-right-radius: 80px 80px;
-border-width: thin;
-    border-style: solid;
-    font-size: 10px;
 }
 
-.caja-links{
-    margin: 0 auto;
-    border-width: thin;
-    border-style: solid;
-    padding-inline-start: 10px;
+.item-nav a{
+    color: inherit;
+    text-decoration: none;
+    /* cursor: inherit; */
 }
 
+
+.item-nav a:hover{
+    color: rgb blue;
+    cursor: pointer;
+}
 
 #titulo-primario{
     font-size: 100px;
@@ -76,15 +85,7 @@ border-width: thin;
 
 } 
 
-#titulo-sec{
-    font-size: 20px;
-    font-family: "Ubuntu-Italic", sans-serif;
-    border-right: 2px solid red;
-    text-align: left;
-    display: inline-block;
-  
-    
-}
+
 #texto1{
   display: inline-block;
     text-align: center;
@@ -100,19 +101,11 @@ border-width: thin;
     border-width: thin;
     border-style: inset; 
    
-    width: 1400px;
+    width: 100%;
     height: 50px;
 
 }
- .guia{
-    font-family: "Ubuntu-Italic", sans-serif;
-    position: relative;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 5px;
- }
+
 
 
  #index{
@@ -125,17 +118,18 @@ text-align: left;
     padding-inline-start: 10px;
     
  }
- #bio{
-display: inline-block;
-text-align: center;
-margin-inline-end: 650px;
-
- }
- #foro{
-    display: inline-block;
-    text-align: left;
- }
+ 
 
  .footer-link{
     font-family: "Ubuntu-Light";
+ }
+
+ footer{
+    
+    background-image: url(./img/spacebkg.png);
+    width: 100%;
+    height: 15vh;
+    background-size: cover;
+    background-position: bottom;
+    
  }

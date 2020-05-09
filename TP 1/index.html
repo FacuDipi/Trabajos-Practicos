@@ -2,93 +2,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 <head>
-    
+
     <title>Hola soy el Titulo del sitio
     </title>
+    <link rel="stylesheet" href="./index.css">
 </head>
-<link rel="stylesheet" href="./index.css">
-<body>
-    <!-- este es el header -->
-    <header>
-        <div class="caja-links">
-        <nav>
-          <div class="link1"> <a href="https://www.instagram.com" target="_blank">Voy a Instagram</a></div> 
-          <div class="link2"><a href="https://www.twitter.com" target="_self">Voy a Twitter</a></div>
-            <div class="link3"> <a href="https://www.youtube.com" target="_blank">Voy a Youtube</a></div>
 
-        </div>
-        </nav>
-    </div>
+<body>
+
+    <header id="header">
+        <h1 class="titulo">Cowboy Bebop</h1>
+
     </header>
 
-        <h1 id="titulo-primario">Cowboy Bebop</h1>
-        <br>
-        <h2 id="titulo-sec">See you Space Cowboy...</h2>
-   
+    <section>
+        <div class="container-nav">
+            <nav>
+                <ul class="list-nav">
+                    <li class="item-nav"> <a href=""></a> Inicio</li>
+                    <li class="item-nav"><a href="">Episodios</a></li>
+                    <li class="item-nav"><a href="">Biografias</a></li>
+                    <li class="item-nav"><a href="#contacto">Descargas</a></li>
+                </ul>
+            </nav>
+        </div>
 
-        <div class="caja-texto"><p id="texto1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Eius dicta nihil inventore praesentium quo ad pariatur modi rem necessitatibus,
-             illum labore et exercitationem maxime impedit recusandae, corrupti commodi,
-              consequuntur a!</p></div> 
-<br>
-<br>
-        <div class="guia">
-        <a id="index" href="./index.html">Inicio</a>
-        <a id="Bio" href="../Clase 1/pages/biografia.html">Bio</a>
-        <a id="foro" href="https://www.google.com">Foro</a>
-    </div>
-    
-   <div> <section><span>Conoce a Spike!</span><img src="./img/cowboy.jpg" alt=""></section>
-    <a href="./pages/biografia.html" target="_blank">Spike Spiegel</a>
-</div>
 
-    <!-- <ul>: lista sin orden / <ol>: lista ordenada  -->
-    <ul>
-        <li>Episodios</li>
-        <li>Personajes</li>
-        <li>Varios</li>
-    </ul>
-    
-    
-    <ol>
-        <form action=""></form><!-- Poniendo li*(N°) despliega varios items segun el N° indicado -->
-        <li>Temporada I</li>
-        <li>Temporada II</li>
-        <li>Temporada III</li>
-        <li>Temporada IV</li>
-
-    </ol>
+        <section class="content">
+            <div class="caja-texto">
+                <p id="texto1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eius dicta nihil inventore praesentium quo ad pariatur modi rem necessitatibus,
+                    illum labore et exercitationem maxime impedit recusandae, corrupti commodi,
+                    consequuntur a!</p>
+            </div>
 
 
 
-    <div class="footer"><footer>
-        <h3 class="links-header">Bang</h3>
-        <ul>
-            <li>
-                <a href="./" class="footer-link">Home</a>
-            </li>
-            <li>
-                <a href="./" class="footer-link">Acerca</a>
-            </li>
-            <li>
-                <a href="./" class="footer-link">Donar</a>
-            </li>
-            <li>
-                <a href="./" class="footer-link">Contacto</a>
-            </li>
-        </ul>
-    </div>
+            <span>Conoce a Spike!</span><img src="./img/cowboy.jpg" alt="">
 
-        <form>
-            <input type="text" placeholder="ingrese mail">
-        <button type="button">enviar</button>
-        </form>
-    </footer>
+            </div>
+        </section>
+        
+     
+
+
+
+        <footer id="footer">
+
+            <h3 class="links-header">Bang</h3>
+            <ul>
+                <li class="item-nav"><a href="./" class="footer-link">Home</a>
+                </li>
+                <li class="item-nav"><a href="./" class="footer-link">Acerca</a>
+                </li>
+                <li class="item-nav"><a href="./" class="footer-link">Donar</a>
+                </li>
+                <li class="item-nav"><a href="./" class="footer-link">Contacto</a>
+                </li>
+            </ul>
+
+
+            <form>
+                <input type="text" placeholder="ingrese mail">
+                <button type="button">enviar</button>
+            </form>
+        </footer>
 </body>
 
 </html>
