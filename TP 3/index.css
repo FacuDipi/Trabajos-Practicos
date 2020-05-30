@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+
+
+header {
+  background: linear-gradient(90deg, rgba(234, 233, 242, 1) 0%, rgba(210, 213, 219, 1) 51%, rgba(161, 161, 161, 1) 100%);
+  width: 100%;
+}
+
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20PX;
+}
+
+.logo {
+  height: 15vh;
+}
+
+.top-nav {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.list-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-family: 'Share Tech Mono';
+}
+
+.item-nav {
+  display: inline-block;
+  margin: 5px 20px;
+}
+
+.item-nav a {
+  font-size: 1.2em;
+  color: #000000;
+  text-decoration: none;
+  cursor: inherit;
+}
+
+.item-nav a:visited {
+  color: #8052ad;
+}
+
+.item-nav a:hover {
+  color: rgb(252, 135, 67);
+  cursor: pointer;
+}
+
+/* 
+@media all (max-width:600px){ 
+    #header{
+
+    flex-wrap: wrap;
+    
+nav{
+
+width: 100%;
+flex-wrap: wrap;
+
+} */
+
+.titulo {
+  background: url(./img/HighTechnologyBG.png);
+  height: 20vh;
+  margin: -15px 0 0 0;
+  background-size: cover;
+  font-family: 'Share Tech Mono';
+  width: 100%;
+}
+
+#title {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5%;
+}
+
+.titulo span {
+  text-shadow: 1px 0 0 #000000, -1px 0 0 #000000, 0 1px 0 #000000, 0 -1px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+  margin: 0.5vh 3vh;
+  font-size: 2em;
+  color: #ffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.secciones {
+  display: flex;
+  width: 99%;
+  height: 300px;
+
+  
+  align-items: center;
+  justify-content: center;
+}
+
+.section-box {
+  width: 32%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.host {
+  display: flex;
+}
+
+.galeria {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 1px;
+  justify-items: center;
+  align-items: center;
+  
+}
+
+
+.galeria-box {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  filter: grayscale(75%);
+  box-sizing: border-box;
+}
+
+.galeria-box::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.galeria-box:hover {
+  transform: scale(1.35, 1.35);
+  background-color: white;
+  filter: none;
+}
+
+.galeria-box:hover::after {
+  opacity: 1;
+}
+
+.galeria-box .tool-text {
+  visibility: hidden;
+  height: 2vh;
+  width: 7vw;
+  background-color: rgb(231, 222, 222);
+  color: rgb(39, 39, 46);
+  text-align: center;
+  border: black;
+  font-size: 12px;
+  border-radius: 2px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 80%;
+  left: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-box h3{
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.galeria-box:hover .tool-text {
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+footer {
+  background: linear-gradient(90deg, rgba(234, 233, 242, 1) 0%, rgba(210, 213, 219, 1) 51%, rgba(161, 161, 161, 1) 100%);
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+}
