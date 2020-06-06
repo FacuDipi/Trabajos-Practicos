@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
 </head>
 <header id="header">
     <img class="logo" src="./img/facu logo.png" alt="aca hay un logo">
@@ -18,7 +20,7 @@
                 <li class="item-nav"> <a href="">Inicio</a> </li>
                 <li class="item-nav"><a href="">Servicios</a></li>
                 <li class="item-nav"><a href="#galeria">Galeria</a></li>
-                <li class="item-nav"><a href="">Contacto</a></li>
+                <li class="item-nav"><a href="#form">Contacto</a></li>
         </div>
         </ul>
     </nav>
@@ -26,30 +28,36 @@
 
 
 </header>
+<body>
 <section>
 
     <h1 class="titulo">
         <div id="title"> <span>Soluciones</span>
-            <span> Informáticas</span></div>
-    </h1>
+          <span> Informáticas</span></div>
+        </h1>
 
 </section>
 
 <section class="secciones">
-
+   
     <div class="section-box">
-        <div class="host">
-
-            <h3>Hosting</h3>
-        </div>
+        <div class="name-box">
+        <ion-icon name="layers-sharp"></ion-icon>
+        <h3>Hosting</h3>
     </div>
-
+</div>
     <div class="section-box">
+        <div class="name-box">
+        <ion-icon name="stats-chart-sharp"></ion-icon>
         <h3>Diseño de Marca</h3>
     </div>
+</div>
     <div class="section-box">
+        <div class="name-box">
+        <ion-icon name="code-slash-sharp"></ion-icon>
         <h3>Desarrollo Web</h3>
     </div>
+</div>
 
 </section>
 
@@ -64,14 +72,29 @@
     </div>
 </section>
 
-<body>
+
 
 </body>
 
 <footer id="footer">
     <img class="logo" src="./img/facu logo.png" alt="aca hay un logo">
-<form action=""></form>
+<div class="contact-container">
+<h2>Contacto</h2>
+<form id="form">
+    <label>Nombre y Apellido*</label>
+    <input type="text"  placeholder="">
+    <label>Empresa</label>
+    <input type="text"  placeholder="">
+    <label>Email*</label>
+    <input type="text"  placeholder="">
+    <label>Teléfono / Celular</label>   
+     <input type="text"  placeholder="">
+    <label>Comentario</label>
+    <textarea placeholder="Escriba su Comentario"></textarea>
+    <input type="submit" value="Enviar">
 
+</form>
+</div>
 </footer>
 
 </html>
