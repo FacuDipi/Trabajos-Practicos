@@ -1,119 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
 
-
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    background: rgb(2,2,4);
-    background: linear-gradient(90deg, rgba(2,2,4,0.8133903133903134) 0%, rgba(2,2,4,0.8945868945868946) 50%, rgba(2,2,4,1) 100%);
-    width: 100%;
-  }
-
-  
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  background: rgb(2, 2, 4);
+  background: linear-gradient(90deg, rgba(2, 2, 4, 0.8133903133903134) 0%, rgba(2, 2, 4, 0.8945868945868946) 50%, rgba(2, 2, 4, 1) 100%);
+  width: 100%;
+}
 body {
   margin: 0;
   padding: 0;
 }
-
-
 .top-nav {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-  
-  .list-nav {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    font-family: 'Wendy One', sans-serif;
-  }
-  
-  .item-nav {
-    display: inline-block;
-    margin: 5px 20px;
-  }
-  
-  .item-nav a {
-    font-size: 1.2em;
-    color: whitesmoke;
-    text-decoration: none;
-    cursor: inherit;
-  }
-  
-  .item-nav::after a:visited {
-    color: #8052ad;
-  }
-  
-  .item-nav a:hover {
-    color: rgb(252, 135, 67);
-    cursor: pointer;
-  }
-
-  .titulo {
-
-    display: flex;
-    align-content: center;
-
-width: 100%;
-
-height:  60vh;
-    font-family: 'Notable', sans-serif;
-background: url(./img/cowboy\ background.png);
-
-
-
-
-/* height: 150vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.list-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-family: 'Wendy One', sans-serif;
+}
+.item-nav {
+  display: inline-block;
+  margin: 5px 20px;
+}
+.item-nav a {
+  font-size: 1.2em;
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: inherit;
+}
+.item-nav::after a:visited {
+  color: #8052AD;
+}
+.item-nav a:hover {
+  color: rgb(252, 135, 67);
+  cursor: pointer;
+}
+.titulo {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  height: 10vh;
+  font-family: 'Notable', sans-serif;
+  background: url(./img/cowboy\ background.png);
+  /* height: 150vh;
 width: 150%; */
-/* overflow-y: hidden ! important;
+  /* overflow-y: hidden ! important;
 overflow-x: hidden ! important; */
-
-
-background-size:cover ;
-/* background-position: center; */
-background-repeat: no-repeat;
-  }
-
-  #titulo{
-    width: 100%;
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+#titulo {
+  width: 100%;
   z-index: +1;
+}
+@keyframes typing {
+  from {
+    width: 0
   }
-
-
-
-
-  @keyframes typing {
-    from { width: 0 }
-    to { width:12em }
+  to {
+    width: 12em
+  }
 }
-
-
-
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: black }
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: black
+  }
+}
+/* h1 {
+  font-size: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(20, end), /* # of steps = # of characters /*
+                  /* blink-caret 10s step-end ; infinite*/
+/* } */ 
+.container-titulo{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 91.1vh;
+}
+.container-titulo img {
+  width: 100%;
+  max-height: 100%;
+  position: absolute;
+}
+.container-titulo div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-titulo div h1 {
+  position: relative;
+  color: red;
+  font-size: 5em;
 }
 
 
 
 
-
-
-h1 { 
-    font-size:150%;
-    
-    white-space:nowrap;
-    overflow:hidden;
-        animation: typing 2s steps(20, end), /* # of steps = # of characters /*
-                  /* blink-caret 10s step-end ; infinite*/
-
-} 
 
