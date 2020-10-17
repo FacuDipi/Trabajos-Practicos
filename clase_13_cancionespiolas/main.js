@@ -5,22 +5,41 @@ const result = document.getElementById('result');
 const more = document.getElementById('more');
 
 
-const loader = document.querySelector('.lds-spinner');
 
+const loader = document.querySelector('.lds-spinner');
+let coso = '<p>Resultados de la busqueda 🎵</p>'
 
 const API_URL = 'https://api.lyrics.ovh';
 
 
-const showSpinner = () => {
+
+
+
+/*const showSpinner = () => {
   loader.classList.add('show');
   setTimeout(() => {
     loader.classList.remove('show');
     setTimeout(() => {
-      // showSongs(songs);
+       searchSongs();
     });
   }, 1000);
-};
-showSpinner();
+}
+*/
+
+
+
+
+
+
+
+
+ const showSpinner =  () => {
+   if
+ (loader.firstElementChild.innerHTML != coso)
+     return prompt('hola');
+ }
+//  showSpinner();
+
 
 
 //handlers
@@ -117,9 +136,10 @@ function init() {
       const song = element.dataset.song;
       getLyric(artist, song);
 
-      // showSpinner();
     }
   });
+   showSpinner();
+
 }
 
 init();

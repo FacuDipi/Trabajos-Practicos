@@ -151,7 +151,7 @@ ul.songs li {
 }
 
 .lds-spinner {
-  opacity: 1 ;
+  opacity: 0 ;
   color: #ffff;
   display: flex;
 
